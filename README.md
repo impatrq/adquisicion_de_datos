@@ -2,9 +2,12 @@
 
 ## Consigna
 
-1- Armar un circuito con dos pulsadores y dos LEDs.
-2- Un pulsador controla el encendido/apagado de un LED (pulsador apretado -> LED encendido, pulsador suelto -> LED apagado).
-3- El otro pulsador al mantenerse apretado debe hacer que el segundo LED parpadee cada medio segundo. Al soltarse, debe dejar el LED en su ultimo estado.
+1- Armar un circuito con dos pulsadores y dos LEDs
+
+2- Un pulsador controla el encendido/apagado de un LED (pulsador apretado -> LED encendido, pulsador suelto -> LED apagado)
+
+3- El otro pulsador al mantenerse apretado debe hacer que el segundo LED parpadee cada medio segundo. Al soltarse, debe dejar el LED en su ultimo estado
+
 
 Hacer un `README.md` con el siguiente contenido:
 
