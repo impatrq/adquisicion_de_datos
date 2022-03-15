@@ -19,7 +19,7 @@ Alumno: Nombre y apellido
 
 Curso: Curso
 
-Materia: Control de Interfaces
+Materia: Adquisicion de Datos
 ```
 
 ## Orientacion
