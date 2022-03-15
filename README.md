@@ -20,6 +20,8 @@ Alumno: Nombre y apellido
 Curso: Curso
 
 Materia: Adquisicion de Datos
+
+[Link a proyecto de Wokwi del `wokwi-project.txt`]
 ```
 
 ## Orientacion
