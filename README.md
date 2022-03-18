@@ -9,7 +9,7 @@
 3- El otro pulsador al mantenerse apretado debe hacer que el segundo LED parpadee cada medio segundo. Al soltarse, debe dejar el LED en su ultimo estado
 
 
-Hacer un `README.md` con el siguiente contenido:
+4- Hacer un `README.md` con el siguiente contenido:
 
 ```markdown
 # Mycropython Pin
