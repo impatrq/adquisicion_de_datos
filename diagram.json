@@ -8,7 +8,7 @@
       "id": "pico",
       "top": 0,
       "left": 0,
-      "attrs": { "env": "micropython-20220117-v1.18" }
+      "attrs": { "builder": "pico-sdk" }
     },
     {
       "type": "wokwi-resistor",
