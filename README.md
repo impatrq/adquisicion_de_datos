@@ -21,11 +21,12 @@ Materia: Adquisicion de Datos
 
 ## Orientacion
 
-- Documentacion de [micropython](https://docs.micropython.org/en/latest/rp2/quickref.html)
-- Raspberry Pico [SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf) para miccropython.
+- Raspberry Pi Pico board [datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf).
+- RP2040 [datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
+- Raspberry Pico [SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf) para miccropython.
 - Hoja de Datos del [LM35] (https://www.ti.com/lit/ds/symlink/lm35.pdf).
 
 ## Entrega
 
 - Crear un repositorio con el nombre `add-02`.
-- Subir el `README.md`, `main.py`.
+- Subir el `README.md`, `main.c`, `CMakeLists.txt`.
