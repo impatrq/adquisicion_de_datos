@@ -41,7 +41,7 @@ Materia: Adquisicion de Datos
 - Raspberry Pi Pico board [datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf).
 - RP2040 [datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
 - Raspberry Pico [SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf) para C/C++.
-- Datos sobre el [ultrasonico(https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf).
+- Datos sobre el [ultrasonico](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf).
 
 ## Entrega
 
