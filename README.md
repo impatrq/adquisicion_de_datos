@@ -7,10 +7,13 @@
 2- Crear una funcion llamada `ultrasonic_get_distance_cm` que se encargue de obtener la distancia en cm:
 
 ```c
-float ultrasonic_get_distance_cm(void) {
+float ultrasonic_get_distance_cm(uint8_t trigger, uint8_t echo) {
 
 }
 ```
+
+Donde `trigger` y `echo` son los pines conectados al ultrasonico.
+
 3- Crear una funcion llamada `ultrasonic_init` que inicialice el sensor a partir del pin de `TRIGGER` y `ECHO`:
 
 ```c
@@ -18,6 +21,9 @@ void ultrasonic_init(uint8_t trigger, uint8_t echo) {
 
 }
 ```
+
+Donde `trigger` y `echo` son los pines conectados al ultrasonico.
+
 4- En la funcion principal, debe hacerse una medicion de distancia con el sensor, y luego: 
 - Si la distancia es menor a 10 cm, se debe prender un LED rojo.
 - Si la distancia es mayor a 10 cm pero menor a 50 cm, se debe prender un LED amarillo.
