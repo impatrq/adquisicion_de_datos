@@ -83,7 +83,7 @@ void display_temp(float temperatura) {
  */
 int main() {
   // Variable para almacenar el resultado del ADC
-  uint16_t adc_reading = 0;
+  uint16_t adc_value = 0;
   // Variable para guardar el valor de temperatura
   float temperatura = 0.0;
   // Inicializacion de UART
