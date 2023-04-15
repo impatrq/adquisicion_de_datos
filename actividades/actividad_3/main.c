@@ -8,35 +8,51 @@
 #include <pico/stdlib.h>
 #include <stdio.h>
 
-// change this to match your setup
+// DHT usado (cambiar por DHT22 si fuese el caso)
 static const dht_model_t DHT_MODEL = DHT11;
+// GPIO a usar para los datos
 static const uint DATA_PIN = 16;
 
-static float celsius_to_fahrenheit(float temperature) {
-    return temperature * (9.0f / 5) + 32;
+/*
+ * @brief Funcion que convierte de Celsius a Fahrenheit
+ * @param celsius: temperatura en grados Celsius
+ * @return temperatura en grados Fahrenheit
+ */
+static inline float celsius_to_fahrenheit(float celsius) {
+    // Retornar el valor de la temperatura en Fahrenheit
+
 }
 
+/*
+ * @brief Programa principal
+ */
 int main() {
+    // Inicializacion de USB
     stdio_init_all();
-    puts("\nDHT test");
-
+    // Instancia de DHT
     dht_t dht;
+    // Inicializacion de DHT usando el PIO0 para controlar el DATA_PIN
     dht_init(&dht, DHT_MODEL, pio0, DATA_PIN, true /* pull_up */);
-    do {
+    
+    while(1) {
+        // Inicio comunicacion con sensor
         dht_start_measurement(&dht);
-        
-        float humidity;
-        float temperature_c;
+        // Variables de humedad y temperatura
+        float humidity, temperature_c;
+        // Esperar a que la comunicacion termine y obtener los datos
         dht_result_t result = dht_finish_measurement_blocking(&dht, &humidity, &temperature_c);
+        // Verificar el resultado de la operacion
         if (result == DHT_RESULT_OK) {
-            printf("%.1f C (%.1f F), %.1f%% humidity\n", temperature_c, celsius_to_fahrenheit(temperature_c), humidity);
-        } else if (result == DHT_RESULT_TIMEOUT) {
-            puts("DHT sensor not responding. Please check your wiring.");
-        } else {
-            assert(result == DHT_RESULT_BAD_CHECKSUM);
-            puts("Bad checksum");
-        }
+            // Mostrar temperatura y humedad
 
-        sleep_ms(2000);
-    } while (true);
+        } else if (result == DHT_RESULT_TIMEOUT) {
+            // Mensaje de error
+            puts("El DHT no responde, probablemente este mal el conexionado");
+        } else {
+            // Error de checksum
+            puts("Mal checksum");
+        }
+        // Demora para no saturar la consola
+        sleep_ms(500);
+    }
 }
