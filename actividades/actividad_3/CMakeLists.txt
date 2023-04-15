@@ -13,7 +13,7 @@ add_subdirectory(dht)
 
 add_executable(dht_example dht_example.c)
 
-pico_enable_stdio_uart(dht_example 1)
+pico_enable_stdio_uart(dht_example 0)
 pico_enable_stdio_usb(dht_example 1)
 
 pico_add_extra_outputs(dht_example)
