@@ -46,7 +46,7 @@
 #define MAX_CHARS      16
 
 // Default I2C
-#define I2C_LCD i2c1
+#define I2C_LCD i2c0
 
 // Function prototypes
 void i2c_write_byte(uint8_t val);
