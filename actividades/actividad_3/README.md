@@ -32,6 +32,6 @@ float celsius_to_fahrenheit(float celsius);
 
 La entrega de la actividad se hace en un repositorio individual de GitHub con el código que se deberá entregar en la tarea correspondiente en Classroom donde será calificada. La actividad tiene un parcialito asociado que se debe completar y aprobar.
 
-## 3.4 Reconocimientos
+## 3.4 RECONOCIMIENTOS
 
 La biblioteca para hacer uso del DHT11/DHT22 con el PIO de la Raspberry Pi Pico se encuentra en [este](https://github.com/vmilea/pico_dht) repositorio de GitHub, desarrollada por el usuario **vmilea**.
