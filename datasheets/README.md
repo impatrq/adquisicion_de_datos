@@ -6,3 +6,4 @@ Se adjuntan en este directorio las hojas de datos de los sensores y circuitos in
 - [BMP280](./bmp280.pdf): sensor de presion y temperatura
 - [PCF8574](./pcf8574.pdf): expansor de I/O para I2C
 - [DHT11](./dht11.pdf): sensor de humedad y temperatura
+- [HCSR04](./HCSR04.pdf): sensor de ultrasonido
