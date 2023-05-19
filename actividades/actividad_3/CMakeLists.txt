@@ -11,7 +11,7 @@ pico_sdk_init()
 
 add_subdirectory(dht)
 
-add_executable(dht_example dht_example.c)
+add_executable(dht_example main.c)
 
 pico_enable_stdio_uart(dht_example 0)
 pico_enable_stdio_usb(dht_example 1)
