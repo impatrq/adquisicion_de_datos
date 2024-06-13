@@ -49,9 +49,6 @@
 // number of calibration registers to be read
 #define NUM_CALIB_PARAMS 24
 
-// I2C peripherial
-#define I2C_BMP i2c0
-
 struct bmp280_calib_param {
     // temperature params
     uint16_t dig_t1;
@@ -70,7 +67,7 @@ struct bmp280_calib_param {
     int16_t dig_p9;
 };
 
-void bmp280_init();
+void bmp280_init(i2c_inst_t *i2c);
 void bmp280_read_raw(int32_t* temp, int32_t* pressure);
 void bmp280_reset();
 int32_t bmp280_convert(int32_t temp, struct bmp280_calib_param* params);
